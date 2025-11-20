@@ -1,10 +1,10 @@
-library identifier: 'Jenkins_Pipeline_Shared_Libs@main',
-retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/anshulc55/Jenkins_Pipeline_Shared_Libs.git'])
+library identifier: 'new-jenkins@main',
+retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/DeepakVetrivel97/new-jenkins.git'])
 
 pipeline{
  agent any
    environment{
-     index=prod
+     index = 'prod'
    }
   
   stages{
